@@ -291,7 +291,7 @@ function NeuralNet:train(nepochs, freqs)
 	end
 
 	self.network:training()
-	--self.network:setBackProp()
+	self.network:setBackProp()
 	--self.network:clean()
 
 	local timer=torch.Timer()

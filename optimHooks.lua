@@ -32,6 +32,11 @@ function nn.Module:optimSet(optimizer, config)
 	self:biasOptimSet(optimizer, config)
 end
 
+function nn.Module:optimClear()
+   self.weightOptimizer=nil
+   self.biasOptimizer=nil
+end
+
 function nn.Module:scaleLearningRates(scale)
    if self.modules then
       for i,module in ipairs(self.modules) do
