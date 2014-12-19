@@ -1,0 +1,4 @@
+nntrain
+=======
+
+Training helper classes
